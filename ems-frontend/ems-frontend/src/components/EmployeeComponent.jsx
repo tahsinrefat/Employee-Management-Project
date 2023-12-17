@@ -116,19 +116,19 @@ const EmployeeComponent = () => {
             <form>
               <div className="form-group mb-2">
                 <label className="form-label">First Name</label>
-                <input type="text" placeholder='Enter Employee First Name' name='firstName' value={firstName} className={`form-control ${errors.firstName ? `is-invalid`: ``}`} onChange={(e) => setFirstName(e.target.value)}/>
+                <input type="text" placeholder='Enter Employee First Name' name='firstName' value={firstName} className={`form-control ${errors.firstName ? 'is-invalid': ''}`} onChange={(e) => setFirstName(e.target.value)}/>
                 { errors.firstName && <div className='invalid-feedback'>{errors.firstName}</div>}
               </div>
 
               <div className="form-group mb-2">
                 <label className="form-label">Last Name</label>
-                <input type="text" placeholder='Enter Employee Last Name' name='lastName' value={lastName} className={`form-control ${errors.lastName ? `is-invalid`: ``}`} onChange={(e) => setLastName(e.target.value)}/>
+                <input type="text" placeholder='Enter Employee Last Name' name='lastName' value={lastName} className={`form-control ${errors.lastName ? 'is-invalid': ''}`} onChange={(e) => setLastName(e.target.value)}/>
                 { errors.lastName && <div className='invalid-feedback'>{errors.lastName}</div>}
               </div>
 
               <div className="form-group mb-2">
                 <label className="form-label">Email</label>
-                <input type="text" placeholder='Enter Employee Email' name='email' value={email} className={`form-control ${errors.email ? `is-invalid`: ``}`} onChange={(e) => setEmail(e.target.value)}/>
+                <input type="text" placeholder='Enter Employee Email' name='email' value={email} className={`form-control ${errors.email ? 'is-invalid': ''}`} onChange={(e) => setEmail(e.target.value)}/>
                 { errors.email && <div className='invalid-feedback'>{errors.email}</div>}
               </div>
 
